@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/jalogo.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+
+        
+	
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+        <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+        <script src="script.js"></script>
+
+    <link rel="stylesheet" href="assets/css/modal.css">
+
+
+    <!-- PWA desde aqui segun el video-->
+        <!-- Para pintar de color la barra de navegador de un navegador-->
+        <meta name="theme-color" content="#171F26">
+        <!-- Para decirle a los navegadores que tu sitio esta optimizado para moviles y que el sitio es amigable -->
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <!-- PWA para apple-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- icono-->
+        <link rel="shortcut icon" type="image/png" href="assets/img/jalogo.png">
+        <!-- Pantalla de inicio-->
+        <link rel="apple-touch-icon" href="assets/img/jalogo.png">
+        <link rel="apple-touch-startup-image" href="assets/img/jalogo.png">
+        <!-- importante -->
+		<link rel="manifest" href="manifest.json">
+
+        <title>JA - MATCH</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border" style="width:160px">
+                        <div class="profile__perfil" style="width:150px; background:rgba(255, 255, 255, 0);">
+                            <!-- Insert your image, according to the example size of the portfolio -->
+                            <img style="width: 100%; height: 100%;" src="assets/img/jalogo.png" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">JA - MATCH</h2>
+                    <h3 class="profile__profession">MISION BOLIVIANA CENTRAL <br>
+                        MINISTERIO JOVEN
+                        </h3>
+
+                    <ul class="profile__social">
+                        <a href="https://m.me/" target="_blank" class="profile__social-link">
+                            <i class="ri-messenger-line"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Regi%C3%B3n-2-MBC-110074424965340/" target="_blank" class="profile__social-link">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ministeriojovenmbc/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <!-- <a href="https://www.linkedin.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a> -->
+                    </ul>
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">2</h3>
+                        <p class="profile__info-description">
+                            DISTRITOS <br> REGION 2
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">10</h3>
+                        <p class="profile__info-description">
+                            IGLESIAS Y <br> CONGREGACIONES
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">52</h3>
+                        <p class="profile__info-description">JOVENES <br> EN SISTEMA</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <!-- Insert your CV -->
+                    <a download="" href="assets/pdf/ConvocatoriaJAMATCH_Region2_Deportes.docx" class="button">
+                        Descargar WORD <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        <a href="https://api.whatsapp.com/send?phone=74578104&text=Hola Abigail, un gusto saludarte!" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- Insert your brand name or profile -->
+                        <a href="https://api.whatsapp.com/send?phone=65504799&text=Hola Saul, Un gusto saludarte!" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <!-- <a href="https://m.me/bedimcode" target="_blank" class="button button__small button__gray">
+                            <i class="ri-messenger-line"></i>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        FISICA
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        ESPIRITUAL
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== Deportivo ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <div class="skills__area">
+                            <h3 class="skills__title">DISCIPLINAS DEPORTIVAS</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">FUTBOL</h3>
+                                            <span class="skills__level">Varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">VOLEIBOL </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">BASQUET </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">FUTSAL</h3>
+                                            <span class="skills__level">Damas</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">WALLY</h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">RAQUETBOL </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__area">
+                            <h3 class="skills__title">ATLETISMO</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">100 MTS PLANOS </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">400 MTS PLANOS </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">4 X 400 MTS PLANOS </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">SALTO LARGO  </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">200 MTS PLANOS </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">4 X 100 MTS PLANOS </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">5000 MTS PLANOS </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">CICLISMO</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">CICLISMO EN RUTA </h3>
+                                            <span class="skills__level">20 K</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">NATACION</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">50 MTS LIBRES </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">4 X 50 RELEVOS ESTILO LIBRE </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">50 MTS ESTILO ESPALDA </h3>
+                                            <span class="skills__level">Damas y varones</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <article class="projects__card">
+                            <img src="assets/img/regla.gif" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">REGLAS</span>
+                                    <h3 class="projects__title">Ver reglas de JA MATCH</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-search-eye-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="https://www.bbva.com/wp-content/uploads/2020/08/BBVA-activar-tarjeta.gif" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">PAGOS</span>
+                                    <h3 class="projects__title">Ver metodos de pago</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-eye-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article> -->
+
+                        <main>
+                            <div class="categorias" id="categorias">
+                                <div class="categoria activa" data-categoria="metodos-pago">
+                                    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/yyecauzv.json"
+                                        trigger="loop"
+                                        colors="primary:#ffffff,secondary:#74ad11"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <p>REGLAS Y SUSPENCION</p>
+                                </div>
+                                <div class="categoria" data-categoria="entregas">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/yeallgsa.json"
+                                        trigger="loop"
+                                        colors="primary:#ffffff,secondary:#74ad11"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <p>FORMAS DE PAGO</p>
+                                </div>
+                            </div>
+                    
+                            <div class="preguntas">
+                    
+                                <!-- Preguntas Metodos de pago -->
+                                <div class="contenedor-preguntas activo" data-categoria="metodos-pago">
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">Reglas <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">
+                                            •	Cada Ministerio Joven deberá tener su distintivo como club: tanto para las actividades espirituales (banderas, cintas, distintivos en cartulina o goma eva, etc) y para las actividades deportivas (poleras o ponchillo con numeración) <br><br>
+                                            •	Cada Ministerio Joven deberá contar con la bandera JA oficial <br><br>
+                                            •	Cada Ministerio Joven deberá contar con una persona que tenga conocimientos en el área de Salud que tenga el curso de primeros auxilios, quien deberá estar presente en todas las actividades deportivas o de recreación que se tenga <br><br>
+                                            •	Cada Ministerio Joven deberá contar con 1 anciano o consejero, quien será el encargado de velar por las actividades de los jóvenes en su iglesia local como en el JA Match
+
+                                        </p>
+                                    </div>
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">Suspenciones <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">
+                                            •	Quedaran eliminados de forma inmediata de cualquier disciplina deportiva los Ministerios Jóvenes que tengan participantes que no se encuentren inscritos en el Sistema de Gestión de Clubes o que no cuenten con seguro anual <br><br>
+                                            •	Quedaran eliminados de forma inmediata de cualquier disciplina deportiva los Ministerios Jóvenes que fomenten actos de violencia física o verbal antes, durante y al finalizar cualquier disciplina deportiva <br><br>
+                                            •	Esta prohibido durante el desarrollo de clasificación de las diferentes disciplinas deportivas el tener música no acorde a nuestros principios, vestimentas o peinados ostentosos, barras o fanfarrias provocativas, el uso no adecuado de las banderas del Ministerio Joven y otros detalles no adecuados a nuestros principios como jóvenes adventistas <br><br>
+                                            •	También quedaran eliminados inmediatamente de cualquier disciplina deportiva si hubiere falta de respeto físico o verbal a los Coordinadores Regionales o Distritales, como también los Pastores Distritales y Staff del evento
+
+                                        </p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Preguntas Entregas -->
+                                <div class="contenedor-preguntas" data-categoria="entregas">
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">¿Como debo hacerlo? <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">
+                                            Cada Ministerio Joven deberá presentar en un tiempo no mayor a 10 minutos un teatro de sombras basado en una de las 28 
+                                            creencias que tenemos como adventistas del séptimo día, se calificaran la puesta en escena, la representación en mayor 
+                                            realidad posible de las sombras y de los personajes y si el mensaje se dio a entender en su cabalidad.
+                                        </p>
+                                    </div>
+                                </div>
+                    
+                    
+                    
+                    
+                            </div>
+                        </main>
+                    </div>
+
+                    <!--=============== Espiritual ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <main>
+                            <div class="categorias" id="categorias">
+                                <div class="categoria activa" data-categoria="metodos-pago">
+                                    <script src="https://cdn.lordicon.com/libs/frhvbuzj/lord-icon-2.0.2.js"></script>
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/zpxybbhl.json"
+                                        trigger="loop"
+                                        colors="primary:#ffffff,secondary:#74ad11"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <p>ORATORIA</p>
+                                </div>
+                                <div class="categoria" data-categoria="entregas">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/rcopausw.json"
+                                        trigger="loop"
+                                        colors="primary:#ffffff,secondary:#74ad11"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <p>TEATRO DE SOMBRAS</p>
+                                </div>
+                                <div class="categoria" data-categoria="seguridad">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/mmspidej.json"
+                                        trigger="loop"
+                                        colors="primary:#ffffff,secondary:#74ad11"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <p>CANCION INEDITA</p>
+                                </div>
+                                <div class="categoria" data-categoria="cuenta">
+                                    <lord-icon
+                                        src="https://cdn.lordicon.com/fpipqhrr.json"
+                                        trigger="loop"
+                                        colors="primary:#ffffff,secondary:#74ad11"
+                                        style="width:70px;height:70px">
+                                    </lord-icon>
+                                    <p>PODCAST MBC</p>
+                                </div>
+                            </div>
+                    
+                            <div class="preguntas">
+                    
+                                <!-- Preguntas Metodos de pago -->
+                                <div class="contenedor-preguntas activo" data-categoria="metodos-pago">
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">¿En que consiste? <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">
+                                            Cada Ministerio Joven deberá presentar a 1 representante para el evento de Oratoria, este tendrá un tiempo de 5 minutos 
+                                            para desarrollar su elocuencia. El tema central para el evento de oratoria es el lema de este año “Yo Voy”, para ello se 
+                                            evaluará el Criterio del orador al realizar su exposición, dominio del tema y del escenario, coherencia del tema con 
+                                            la exposición, trascendencia del mensaje y llamado.
+                                        </p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Preguntas Entregas -->
+                                <div class="contenedor-preguntas" data-categoria="entregas">
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">¿Como debo hacerlo? <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">
+                                            Cada Ministerio Joven deberá presentar en un tiempo no mayor a 10 minutos un teatro de sombras basado en una de las 28 
+                                            creencias que tenemos como adventistas del séptimo día, se calificaran la puesta en escena, la representación en mayor 
+                                            realidad posible de las sombras y de los personajes y si el mensaje se dio a entender en su cabalidad.
+                                        </p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Preguntas Seguridad -->
+                                <div class="contenedor-preguntas" data-categoria="seguridad">
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">¿Sobre que tratara? <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">
+                                            Cada Ministerio Joven deberá presentar de forma de solistas, dúos o conjuntos, una canción inédita de acuerdo a 
+                                            nuestro lema emblema de la MBC: “Esta es mi misión”, para ello se calificará la originalidad, la interpretación, 
+                                            la música, la expresión vocal, la entonación, el dominio verbal y el dominio del escenario.</p>
+                                    </div>
+                                </div>
+                    
+                                <!-- Preguntas Cuenta -->
+                                <div class="contenedor-preguntas" data-categoria="cuenta">
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">¿Podcast? <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">
+                                            Cada Ministerio Joven deberá subir a sus redes sociales de su región cada mes, un podcast de un tiempo no mayor 
+                                            de 5 minutos donde se pueda apreciar un dialogo con los jóvenes de su iglesia en temas que sean los que pide la 
+                                            tarjeta Líder JA en la sección 2 (Relación: Vida en Comunidad): Música, modestia cristiana, enamoramiento, 
+                                            salud y temperancia, padre e hijos, uso de internet, amistad, ideología de género, juegos, magia o ficción.
+                                        </p>
+                                    </div>
+                                    <div class="contenedor-pregunta">
+                                        <p class="pregunta">¿Que se calificara? <img src="assets/img/suma.svg" alt="Abrir Respuesta" /></p>
+                                        <p class="respuesta">Se calificará la creatividad e innovación del podcast, el desarrollo del mismo, la comprensión 
+                                            del mensaje y la originalidad.
+                                        </p>
+                                    </div>
+                                </div>
+                    
+                    
+                    
+                    
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                &#169; s@u_m@n!ch 2022
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        
+	<script src="js/categorias.js"></script>
+	<script src="js/preguntasFrecuentes.js"></script>
+
+
+    <script>
+        const categorias = document.querySelectorAll('#categorias .categoria');
+const contenedorPreguntas = document.querySelectorAll('.contenedor-preguntas');
+let categoriaActiva = null;
+
+categorias.forEach((categoria) => {
+	categoria.addEventListener('click', (e) => {
+		categorias.forEach((elemento) => {
+			elemento.classList.remove('activa');
+		});
+
+		e.currentTarget.classList.toggle('activa');
+		categoriaActiva = categoria.dataset.categoria;
+
+
+		// Activamos el contenedor de preguntas que corresponde
+		contenedorPreguntas.forEach((contenedor) => {
+			if(contenedor.dataset.categoria === categoriaActiva){
+				contenedor.classList.add('activo');
+			} else {
+				contenedor.classList.remove('activo');
+			}
+		});
+	});
+});
+    </script>
+
+    <script>
+        const preguntas = document.querySelectorAll('.preguntas .contenedor-pregunta');
+preguntas.forEach((pregunta) => {
+	pregunta.addEventListener('click', (e) => {
+		e.currentTarget.classList.toggle('activa');
+
+		const respuesta = pregunta.querySelector('.respuesta');
+		const alturaRealRespuesta = respuesta.scrollHeight;
+		
+		if(!respuesta.style.maxHeight){
+			// Si esta vacio el maxHeight entonces ponemos un valor.
+			respuesta.style.maxHeight = alturaRealRespuesta + 'px';
+		} else {
+			respuesta.style.maxHeight = null;
+		}
+
+		// [Opcional] Reiniciamos las demas preguntas
+		preguntas.forEach((elemento) => {
+			// Solamente queremos ejecutar el codigo para las preguntas que no 
+			// sean la pregunta a la que le dimos click.
+			if(pregunta !== elemento){
+				elemento.classList.remove('activa');
+				elemento.querySelector('.respuesta').style.maxHeight = null;
+			}
+		});
+
+
+	});
+});
+    </script>
+    </body>
+</html>
